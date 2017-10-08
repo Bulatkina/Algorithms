@@ -1,6 +1,6 @@
 #include <iostream>
 #include "stack.h"
-
+#include "conio.h"
 int main()
 {
     Stack *stack = stack_create();
@@ -18,9 +18,11 @@ int main()
     stack_push(stack, 5);
     while (!stack_empty(stack))
     {
-        std::cout << "Get: " << stack_get(stack) << "\n";
+        std::cout << "Get: " << stack_get(stack) << "\n"; 
         stack_pop(stack);
     }
 
     stack_delete(stack);
+	getch();
+	return 0;
 }
