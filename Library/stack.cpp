@@ -11,7 +11,7 @@ Stack *stack_create()
 {
 	Stack* stack = new Stack;
 	stack->list = list_create();
-  return stack;
+    return stack;
 }
 
 // удаление стека

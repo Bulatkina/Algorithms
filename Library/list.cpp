@@ -93,7 +93,7 @@ ListItem *list_erase(List *list, ListItem *item)
 	return *indirect = next;
 }
 
-// удалить элемент списка, следующий за заданным
+//удалить элемент списка, следующий за заданным
 ListItem *list_erase_next(List *list, ListItem *item)
 {
 	ListItem *middle = item->next;
